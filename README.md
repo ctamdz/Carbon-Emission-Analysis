@@ -9,7 +9,8 @@
 
 ### What is the project about?
 
-> ![Photo by Swiss](https://lms.swisscoding.edu.vn/pluginfile.php/22102/mod_label/intro/cover.jpg)
+> ![Cover Image](https://github.com/ctamdz/Carbon-Emission-Analysis/blob/main/cover.jpg?raw=true)
+
 
 This report aims to analyze carbon emissions to examine the carbon footprint across various industries. We aim to identify sectors with the highest levels of emissions by analyzing them across countries and years, as well as to uncover trends.
 
