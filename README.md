@@ -1,30 +1,4 @@
-# 💼 Project : Carbon Emission Analysis
 
-## 1. Introduction
-
-### What is the project about?
-
-> ![Photo by Swiss](https://lms.swisscoding.edu.vn/pluginfile.php/22102/mod_label/intro/cover.jpg)
-This report aims to analyze carbon emissions to examine the carbon footprint across various industries. We aim to identify sectors with the highest levels of emissions by analyzing them across countries and years, as well as to uncover trends.
-
-Carbon emissions play a crucial role in the environment, accounting for over 75% of global emissions and posing a significant environmental challenge. These emissions contribute to the accumulation of greenhouse gases in the atmosphere, leading to climate change, planetary warming, and involvement in various environmental disasters.
-
-Through this analysis, we hope to gain an understanding of the environmental impact of different industries and contribute to making informed decisions in sustainable development.
-
----
-### 🎯 Objectives
-
-The key objectives of this project are:
-
-- To identify the **products** and **industries** with the highest carbon emissions.
-- To determine the **countries** and **companies** that contribute most significantly to global emissions.
-- To observe **emission trends over time** and detect which **industries have improved** or worsened.
-- To uncover **insights and patterns** that could guide sustainability practices or regulatory recommendations.
-
----
-### 📊 Data Source: Where Our Data Comes From
-
-Our dataset is compiled from publicly available data from [nature.com](https://www.nature.com/) and encompasses the Product Carbon Footprints (PCF) for various companies. PCFs represent the greenhouse gas emissions associated with specific products, quantified in CO₂ (carbon dioxide equivalent).
 
 ---
 
