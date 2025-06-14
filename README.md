@@ -165,14 +165,42 @@ Limit 5;
 ### 4.1 Which products contribute the most to carbon emissions?
 
 #### 🧾 SQL Query:
+####> ⚠️ Note: The dataset contains duplicate product entries (e.g., "TCDE").  
+> To ensure accurate ranking, we applied a `GROUP BY` clause and selected the **maximum** carbon footprint for each product.
+
 
 ```sql
 SELECT 
     product_name,
-    ROUND(carbon_footprint_pcf, 2) AS carbon_footprint_pcf
+    ROUND(MAX(carbon_footprint_pcf), 2) AS carbon_footprint_pcf
 FROM 
     product_emissions
+GROUP BY 
+    product_name
 ORDER BY 
     carbon_footprint_pcf DESC
 LIMIT 10;
+
 ```
+###Ouput:
+| product_name                                                                                                                       | carbon_footprint_pcf | 
+| ---------------------------------------------------------------------------------------------------------------------------------: | -------------------: | 
+| Wind Turbine G128 5 Megawats                                                                                                       | 3718044              | 
+| Wind Turbine G132 5 Megawats                                                                                                       | 3276187              | 
+| Wind Turbine G114 2 Megawats                                                                                                       | 1532608              | 
+| Wind Turbine G90 2 Megawats                                                                                                        | 1251625              | 
+| Land Cruiser Prado. FJ Cruiser. Dyna trucks. Toyoace.IMV def unit.                                                                 | 191687               | 
+| Retaining wall structure with a main wall (sheet pile): 136 tonnes of steel sheet piles and 4 tonnes of tierods per 100 meter wall | 167000               | 
+| TCDE                                                                                                                               | 99075                | 
+| Mercedes-Benz GLE (GLE 500 4MATIC)                                                                                                 | 91000                | 
+| Electric Motor                                                                                                                     | 87589                | 
+| Mercedes-Benz S-Class (S 500)                                                                                                      | 85000                | 
+> ![products contribute t](https://github.com/ctamdz/Carbon-Emission-Analysis/blob/main/carbon_footprint_pcf%20vs.%20product_name.png?raw=true)
+## 🧾 Conclusion
+### 🔍 Key Findings:
+
+- **Wind turbines**, while central to renewable energy production, ranked highest in production-related emissions. This highlights the **environmental cost of manufacturing** large-scale infrastructure, even when intended for green energy.
+- **Automobiles**, particularly large and luxury models such as the Land Cruiser and Mercedes-Benz GLE, consistently appear in the top carbon-emitting products.
+- **Industrial equipment and infrastructure**, like retaining wall systems and electric motors, also account for significant emissions, largely due to raw material usage and energy-intensive processes.
+
+
