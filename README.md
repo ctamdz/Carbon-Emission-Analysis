@@ -111,7 +111,7 @@ SELECT *
 FROM product_emissions 
 LIMIT 5;
 ```
-#####Ouput:
+##### Ouput:
 | id           | company_id | country_id | industry_group_id | year | product_name                                                    | weight_kg | carbon_footprint_pcf | upstream_percent_total_pcf | operations_percent_total_pcf | downstream_percent_total_pcf | 
 | -----------: | ---------: | ---------: | ----------------: | ---: | --------------------------------------------------------------: | --------: | -------------------: | -------------------------: | ---------------------------: | ---------------------------: | 
 | 10056-1-2014 | 82         | 28         | 2                 | 2014 | Frosted Flakes(R) Cereal                                        | 0.7485    | 2                    | 57.50                      | 30.00                        | 12.50                        | 
@@ -148,7 +148,7 @@ HAVING
     COUNT(*) > 1
 Limit 5;
 ```
-###Ouput:
+### Ouput:
 | id           | company_id | country_id | industry_group_id | year | douplicate_count | 
 | -----------: | ---------: | ---------: | ----------------: | ---: | ---------------: | 
 | 10056-1-2014 | 82         | 28         | 2                 | 2014 | 2                | 
@@ -181,7 +181,7 @@ ORDER BY
 LIMIT 10;
 
 ```
-###Ouput:
+### Ouput:
 | product_name                                                                                                                       | carbon_footprint_pcf | 
 | ---------------------------------------------------------------------------------------------------------------------------------: | -------------------: | 
 | Wind Turbine G128 5 Megawats                                                                                                       | 3718044              | 
